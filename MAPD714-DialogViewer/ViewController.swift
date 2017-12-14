@@ -66,7 +66,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 //        return size
 //    }
     
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: NSIndexPath) -> UICollectionReusableView {
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
             if (kind == UICollectionElementKindSectionHeader) {
                 let cell = collectionView.dequeueReusableSupplementaryView( ofKind: kind, withReuseIdentifier: "HEADER", for: indexPath as IndexPath) as! HeaderCell
                 cell.maxWidth = collectionView.bounds.size.width
@@ -78,8 +78,6 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }
     
     override func viewDidLoad() {
-        self.collectionView?.register(ContentCell.self, forCellWithReuseIdentifier: "CONTENT")
-        super.viewDidLoad()
         
         var contentInset = collectionView!.contentInset
         contentInset.top = 20
@@ -87,11 +85,14 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         
         let layout = collectionView!.collectionViewLayout
         let flow = layout as! UICollectionViewFlowLayout
-        flow.sectionInset = UIEdgeInsetsMake(10, 20, 30, 20)
         
-        collectionView?.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HEADER")
+        self.collectionView?.register(ContentCell.self, forCellWithReuseIdentifier: "CONTENT")
+        super.viewDidLoad()
+        
+        self.collectionView?.register(HeaderCell.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HEADER")
+        
         flow.headerReferenceSize = CGSize(width: 100, height: 25)
-        
+        flow.sectionInset = UIEdgeInsetsMake(10, 20, 30, 20)
         
         
         
