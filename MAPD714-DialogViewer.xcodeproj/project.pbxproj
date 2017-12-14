@@ -16,6 +16,16 @@
 		745BE07B1FE1D228009248C9 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745BE07A1FE1D228009248C9 /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		745BE0851FE1F944009248C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 745BE05B1FE1C70A009248C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 745BE0621FE1C70A009248C9;
+			remoteInfo = "MAPD714-DialogViewer";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		745BE0631FE1C70A009248C9 /* MAPD714-DialogViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD714-DialogViewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745BE0661FE1C70A009248C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,10 +36,18 @@
 		745BE0721FE1C70A009248C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		745BE0781FE1CB4D009248C9 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		745BE07A1FE1D228009248C9 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		745BE0801FE1F944009248C9 /* MAPD714-DialogViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD714-DialogViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		745BE0601FE1C70A009248C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745BE07D1FE1F944009248C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				745BE0631FE1C70A009248C9 /* MAPD714-DialogViewer.app */,
+				745BE0801FE1F944009248C9 /* MAPD714-DialogViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +109,24 @@
 			productReference = 745BE0631FE1C70A009248C9 /* MAPD714-DialogViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		745BE07F1FE1F944009248C9 /* MAPD714-DialogViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745BE0871FE1F944009248C9 /* Build configuration list for PBXNativeTarget "MAPD714-DialogViewerTests" */;
+			buildPhases = (
+				745BE07C1FE1F944009248C9 /* Sources */,
+				745BE07D1FE1F944009248C9 /* Frameworks */,
+				745BE07E1FE1F944009248C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				745BE0861FE1F944009248C9 /* PBXTargetDependency */,
+			);
+			name = "MAPD714-DialogViewerTests";
+			productName = "MAPD714-DialogViewerTests";
+			productReference = 745BE0801FE1F944009248C9 /* MAPD714-DialogViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +140,11 @@
 					745BE0621FE1C70A009248C9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					745BE07F1FE1F944009248C9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 745BE0621FE1C70A009248C9;
 					};
 				};
 			};
@@ -120,6 +162,7 @@
 			projectRoot = "";
 			targets = (
 				745BE0621FE1C70A009248C9 /* MAPD714-DialogViewer */,
+				745BE07F1FE1F944009248C9 /* MAPD714-DialogViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +175,13 @@
 				745BE0711FE1C70A009248C9 /* LaunchScreen.storyboard in Resources */,
 				745BE06E1FE1C70A009248C9 /* Assets.xcassets in Resources */,
 				745BE06C1FE1C70A009248C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745BE07E1FE1F944009248C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +199,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		745BE07C1FE1F944009248C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		745BE0861FE1F944009248C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 745BE0621FE1C70A009248C9 /* MAPD714-DialogViewer */;
+			targetProxy = 745BE0851FE1F944009248C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		745BE06A1FE1C70A009248C9 /* Main.storyboard */ = {
@@ -308,6 +373,38 @@
 			};
 			name = Release;
 		};
+		745BE0881FE1F944009248C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BULHRS882;
+				INFOPLIST_FILE = "MAPD714-DialogViewerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-DialogViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD714-DialogViewer.app/MAPD714-DialogViewer";
+			};
+			name = Debug;
+		};
+		745BE0891FE1F944009248C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BULHRS882;
+				INFOPLIST_FILE = "MAPD714-DialogViewerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD714-DialogViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD714-DialogViewer.app/MAPD714-DialogViewer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +422,15 @@
 			buildConfigurations = (
 				745BE0761FE1C70A009248C9 /* Debug */,
 				745BE0771FE1C70A009248C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745BE0871FE1F944009248C9 /* Build configuration list for PBXNativeTarget "MAPD714-DialogViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745BE0881FE1F944009248C9 /* Debug */,
+				745BE0891FE1F944009248C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

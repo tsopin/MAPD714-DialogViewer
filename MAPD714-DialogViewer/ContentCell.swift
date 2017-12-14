@@ -11,6 +11,11 @@ import UIKit
 class ContentCell: UICollectionViewCell {
     var label: UILabel!
     var maxWidth: CGFloat!
+    
+//    class func sizeForContentString(s: String, forMaxWidth maxWidth: CGFloat) -> CGSize {
+//        return CGSize.zero
+//    }
+    
     var text: String! {
         get {
         return label.text
@@ -28,9 +33,7 @@ class ContentCell: UICollectionViewCell {
     
     }
     
-    class func sizeForContentString(s: String, forMaxWight maxWidth: CGFloat) -> CGSize {
-        return CGSize.zero
-    }
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
